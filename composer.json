@@ -1,0 +1,18 @@
+{
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "coderstephen/slack-client": "^0.3.0",
+    "vlucas/phpdotenv": "^2.5",
+    "guzzlehttp/guzzle": "^6.3",
+    "ext-json": "^1.6",
+    "monolog/monolog": "^1.23",
+    "czproject/git-php": "^3.14",
+    "phpunit/phpunit": "^7.3"
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php -r \"copy('.env.dist', '.env');\""
+    ]
+  }
+}

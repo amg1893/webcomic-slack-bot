@@ -1,0 +1,9 @@
+.idea
+vendor
+
+sixapidwj_test
+
+last.json
+.env
+logger.log
+config.local.json
