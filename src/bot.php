@@ -100,8 +100,8 @@ $client->connect()->then(function () use ($client, $log) {
                 $client->postMessage($message);
                 $log->debug('Message sent');
 
-                /*$ourLastComic['htz-last'] = $htzLastId;
-            file_put_contents(BASE_PATH . '/last.json', json_encode($ourLastComic));*/
+                $ourLastComic['htz-last'] = $htzLastId;
+                file_put_contents(BASE_PATH . '/last.json', json_encode($ourLastComic));
             }
         } catch (\Exception $e) {
             $log->error('Error obtaining comic');
